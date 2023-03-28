@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    404: Page not Found !!!
+{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
+{% endblock css_files %}
+
+{% block content %}
+
+    <div id="error404">
+        <h3>We are sorry</h3>
+        <p>But we coudn't find the page. Please report</p>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a Graphics Hardware Engineer at INTEL, I specialize in developing Debug and Validation tools to improve workflow and efficiency. With a strong background in data structures, algorithms, automation, and shell scripting, I bring expertise in C++ and Python programming, as well as CI/CD and Linux. I am committed to designing and developing tools that enhance productivity and optimize processes</p>
+    </section>
+{% endblock content %}
